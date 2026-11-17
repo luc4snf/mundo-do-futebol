@@ -15,7 +15,7 @@
       <a class="brand" href="#inicio" aria-label="Mundo do Futebol, início"><span class="brand-mark" aria-hidden="true">⚽</span><span>Mundo do <strong>Futebol</strong></span></a>
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
       <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
-        <a href="#inicio">Início</a><a href="#noticias">Notícias</a><a href="#times">Times</a><a href="#curiosidades">Curiosidades</a><a href="#contato">Contato</a>
+        <a href="#inicio">Início</a><a href="#noticias">Notícias</a><a href="#times">Times</a><a href="#curiosidades">Curiosidades</a><a href="#jogo">Jogar</a><a href="#contato">Contato</a>
       </nav>
     </div>
   </header>
@@ -33,7 +33,7 @@
     </section>
 
     <section class="intro section-pad">
-      <div class="container intro-grid"><div><p class="eyebrow eyebrow-green">Bem-vindo ao campo</p><h2>Futebol para<br>todos os torcedores.</h2></div><p class="intro-text">Um lugar leve para acompanhar o esporte, conhecer equipes e compartilhar a paixão pelo futebol. Escolha uma seção e venha para o jogo.</p></div>
+      <div class="container intro-grid"><div><p class="eyebrow eyebrow-green">Bem-vindo ao campo</p><h2>Futebol para<br>todos os torcedores.</h2></div><div><p class="intro-text">Um lugar leve para acompanhar o esporte, conhecer equipes e compartilhar a paixão pelo futebol. Escolha uma seção e venha para o jogo.</p><aside class="persona-card"><strong>Para quem é este site?</strong><p>Rafa tem 16 anos, estuda e acompanha futebol pelo celular. Ele quer descobrir notícias, times e curiosidades em linguagem simples, sem perder tempo procurando em várias páginas. Por isso, o conteúdo é direto, o menu é curto e o site funciona em telas pequenas.</p></aside></div></div>
     </section>
 
     <section class="section-pad section-soft" id="noticias">
@@ -49,6 +49,11 @@
     </section>
 
     <section class="curiosity section-pad" id="curiosidades"><div class="container curiosity-grid"><div><p class="eyebrow">Você sabia?</p><h2>O campo também conta histórias.</h2><p>As linhas, as regras e até a bola mudaram ao longo do tempo. O futebol que conhecemos hoje é resultado de muitas ideias e culturas.</p><a class="button button-outline" href="#contato">Compartilhe uma curiosidade</a></div><div class="stat-card"><span class="stat-ball" aria-hidden="true">⚽</span><strong>11</strong><span>jogadores por equipe em campo</span><small>Uma equipe trabalha em conjunto para fazer o jogo acontecer.</small></div></div></section>
+
+    <section class="game-section section-pad" id="jogo"><div class="container"><div class="section-heading"><div><p class="eyebrow eyebrow-green">Desafio rápido</p><h2>Chute ao gol</h2></div><p class="heading-note">Ajuste a direção e a força. Você tem cinco chutes para vencer o goleiro.</p></div>
+      <div class="game-card"><canvas id="soccer-game" width="720" height="340" role="img" aria-label="Campo de futebol com goleiro, gol e bola. Use os controles para chutar."></canvas><div class="game-controls"><div class="range-control"><label for="aim">Direção <output id="aim-value" for="aim">50</output></label><input id="aim" type="range" min="0" max="100" value="50"></div><div class="range-control"><label for="power">Força <output id="power-value" for="power">65</output></label><input id="power" type="range" min="25" max="100" value="65"></div><button id="shoot-button" class="button button-dark" type="button">Chutar <span aria-hidden="true">⚽</span></button><button id="restart-game" class="button button-restart" type="button" hidden>Jogar novamente</button><p id="game-status" class="game-status" aria-live="polite">Prepare o chute! Ajuste os controles e tente marcar.</p><div class="game-score" aria-live="polite"><span>Gols <strong id="goals">0</strong></span><span>Chutes restantes <strong id="shots-left">5</strong></span></div></div></div>
+      <p class="game-note">Jogo demonstrativo feito em JavaScript. O roteiro para recriar a lógica em uma ferramenta Low Code está no README.</p>
+    </div></section>
 
     <section class="section-pad contact-section" id="contato"><div class="container contact-grid"><div><p class="eyebrow eyebrow-green">Sua vez de falar</p><h2>Vamos conversar<br>sobre futebol?</h2><p>Deixe sua mensagem e conte o que você mais gosta no esporte.</p></div>
       <form id="contact-form" class="contact-form" novalidate>
